@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Jørgen Reimers
+	email = jorgenreim@gmail.com
+	signingkey = 6FC1A798A020CF0E
+
+[commit]
+	gpgsign = true
