@@ -2,7 +2,16 @@
 [user]
 	name = Jørgen Reimers
 	email = jorgenreim@gmail.com
-	signingkey = 6FC1A798A020CF0E
-
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMfTy91CPSHLAxaduie0/GrqmzC/342iuM8D6Ev/xbgK
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/opt/1Password/op-ssh-sign"
 [commit]
-	gpgsign = true
+    gpgsign = true
+[push]
+    autoSetupRemote = true
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main

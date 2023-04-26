@@ -12,6 +12,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/syntastic'
+" Plugin 'valloric/youcompleteme'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -29,3 +32,28 @@ set relativenumber
 " Vim backup and swap files directory
 set backupdir=~/.vim/tmp//,.
 set directory=~/.vim/tmp//,.
+
+" Solarized syntax
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+:autocmd InsertEnter * set cul
+:autocmd InsertLeave * set nocul
+
+set ttimeout
+set ttimeoutlen=1
+set ttyfast
+
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
