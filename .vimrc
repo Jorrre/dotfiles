@@ -12,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
 " Plugin 'valloric/youcompleteme'
 
@@ -34,9 +34,9 @@ set backupdir=~/.vim/tmp//,.
 set directory=~/.vim/tmp//,.
 
 " Solarized syntax
-syntax enable
-set background=dark
-colorscheme solarized
+" syntax enable
+" set background=dark
+" colorscheme solarized
 
 " Syntastic settings
 set statusline+=%#warningmsg#
@@ -57,3 +57,6 @@ set ttyfast
 
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
+
+" fzf
+source /usr/share/doc/fzf/examples/fzf.vim

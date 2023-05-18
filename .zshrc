@@ -113,3 +113,8 @@ test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 eval `dircolors ~/.dir_colors/dircolors`
 
 export SSH_AUTH_SOCK=~/.1password/agent.sock
+
+# fzf
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
+
